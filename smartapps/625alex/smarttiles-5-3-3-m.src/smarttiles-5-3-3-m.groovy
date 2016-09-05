@@ -27,17 +27,14 @@ definition(
     iconX2Url: "https://625alex.github.io/SmartTiles/prod/icon.png",
     oauth: true)
 
-def appVersion() {"5.3.3"}
+def appVersion() {"0.0.1"}
 def appStream() {"M"}
 
 preferences {
 	page(name: "selectDevices", install: false, uninstall: true, nextPage: "nextPage") {
         section("About") {
-            paragraph "SmartTiles Dashboard, a SmartThings web client.\n\nYour home has a Home Page!™"
-            paragraph "Version ${appVersion()}-${appStream()}\n\n" +
-            "If you like this app, please support the developer via PayPal:\n\ndonate@SmartTiles.click\n\n" +
-            "Copyright © 2014 Alex Malikov"
-			href url:"http://SmartTiles.click", style:"embedded", required:false, title:"More information...", description:"www.SmartTiles.click"
+            paragraph "We R Ownz All The Things™"
+            paragraph "Version ${appVersion()}-${appStream()}\n\n" 
         }
 		
 		section() {
